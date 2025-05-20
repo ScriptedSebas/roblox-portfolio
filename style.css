@@ -1,0 +1,184 @@
+/* I feel like this css is very cluttered but it works */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: #0e121c;
+    color: #FFFFFF;
+}
+
+header,
+footer {
+    background-color: #191e2c;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    border-top: 2px solid rgba(0, 0, 0, 0.454);
+}
+
+header {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.454);
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: #ffffff12;
+}
+
+.parallax-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-vid {
+    position: relative;
+    height: 20%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.parallax-vid video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.img-1,
+.img-2,
+.img-3 {
+    min-height: 100%;
+}
+
+.img-1 {
+    background-image: url("images/Showcase.png");
+    min-height: 90%;
+}
+
+.img-2 {
+    background-image: url("images/Hallway1.png");
+    min-height: 80%;
+}
+
+.img-3 {
+    background-image: url("images/hallway2.png");
+}
+
+.vid-1 {
+    max-height: 100%;
+}
+
+.big-text {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.button-style,
+.button-style-second {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-style {
+    background-color: #3e83dc;
+}
+
+.button-style-second {
+    background-color: #00000064;
+    box-shadow: 0 0 5px #000000c2;
+    text-shadow: 0 1px 5px #00000098;
+}
+
+.button-style:hover,
+.button-style-second:hover {
+    background-color: #4889dd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px #0000004d;
+}
+
+.image-slot:hover {
+    transform: translateY(-6px);
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px #0000004d;
+}
+
+.bigger-text {
+    font-size: 18px;
+    margin: auto;
+    max-width: 60%;
+}
+
+.text-secondary {
+    color: #7aaed5;
+}
+
+.center-div {
+    background-color: #0e121c;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 30px;
+    min-height: 200px;
+}
+
+.align-center {
+    align-self: center;
+    text-align: center;
+}
+
+.image-slot {
+    border-radius: 17px;
+    max-width: 23%;
+    outline: 2px dotted #ffffff24;
+    box-shadow: 0 6px 5px #0000004d;
+    transition: all 0.3s ease;
+    margin: 1%;
+}
+
+.showcase-widget {
+    max-height: 260px;
+    min-height: 260px;
+    max-width: 200px;
+    background-color: #1c202b;
+    border-radius: 17px;
+    margin: auto;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 5px #0000004d;
+}
+
+.showcase-widget:hover {
+    transform: translateY(-6px);
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px #0000004d;
+}
+
+.showcase-widget img {
+    max-width: 100%;
+    border-radius: 17px;
+}
